@@ -34,10 +34,7 @@ public class character2D : MonoBehaviour
     {
         transform.Translate(Vector2.right * Axis.x * moveSpeed * Time.deltaTime); 
         spr.flipX = Flip;
-    }
 
-    void FixedUpdate()
-    {
         if(Grounding)
         {
             if(JumpButton)
@@ -46,6 +43,13 @@ public class character2D : MonoBehaviour
                 anim.SetTrigger("jump");
             }
         }
+    }
+
+    void FixedUpdate()
+    {
+        //Debug.Log(rb2D.velocity.y);
+        anim.SetFloat("velocityY",rb2D.velocity.y);
+        anim.SetBool("ground",Grounding);
     }
 
     void LateUpdate()
@@ -78,5 +82,15 @@ public class character2D : MonoBehaviour
     {
         Gizmos.color = rayColor;
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Coin"))
+        {
+            Coin coin = other.GetComponent<Coin>();
+            Destroy(other.gameObject);
+            Debug.Log(coin.Points);
+        }
     }
 }
