@@ -49,7 +49,7 @@ public class character2D : MonoBehaviour
     {
         //Debug.Log(rb2D.velocity.y);
         anim.SetFloat("velocityY",rb2D.velocity.y);
-        anim.SetBool("ground",Grounding);
+        anim.SetBool("Grounding",Grounding);
     }
 
     void LateUpdate()
@@ -89,8 +89,9 @@ public class character2D : MonoBehaviour
         if(other.CompareTag("Coin"))
         {
             Coin coin = other.GetComponent<Coin>();
+            Gamemanager.instance.Score.AddPoints(coin.Points);
             Destroy(other.gameObject);
-            Debug.Log(coin.Points);
+            //Debug.Log(coin.Points);
         }
     }
 }

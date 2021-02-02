@@ -38,8 +38,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\character2D.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\Coin.cs" />
+     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Scripts\Score.cs" />
+     <Compile Include="Assets\Scripts\Gamemanager.cs" />
      <None Include="Assets\Sprites\free_character\help file - LudicArts.txt" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Descargas/apps/Unity/Editor/2020.2.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -614,6 +616,9 @@
     <Reference Include="Unity.2D.Tilemap.Extras">
         <HintPath>D:/Descargas/apps/Unity/proyectos/Ulsa-2d-project/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Editor">
+        <HintPath>D:/Descargas/apps/Unity/proyectos/Ulsa-2d-project/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
         <HintPath>D:/Descargas/apps/Unity/proyectos/Ulsa-2d-project/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
@@ -643,6 +648,9 @@
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>D:/Descargas/apps/Unity/proyectos/Ulsa-2d-project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+        <HintPath>D:/Descargas/apps/Unity/proyectos/Ulsa-2d-project/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>D:/Descargas/apps/Unity/proyectos/Ulsa-2d-project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
