@@ -1,23 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class Score : MonoBehaviour
 {
-   [SerializeField]
-   Text score;
+   
+   TextMeshProUGUI score;
    [SerializeField]
    int currentScore = 0;
 
    void Awake()
    {
-       score = GetComponent<Text>();
+       score = GetComponent<TextMeshProUGUI>();
    }
 
    public void AddPoints(int points)
    {
        currentScore += points;
-       score.text = $"Score: {currentScore} points";
+       score.text = $"<b>Score:</b> <color=#ffff>{currentScore} pts</color>";
    }
 }

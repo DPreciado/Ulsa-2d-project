@@ -49,13 +49,13 @@ public class character2D : MonoBehaviour
     {
         //Debug.Log(rb2D.velocity.y);
         anim.SetFloat("velocityY",rb2D.velocity.y);
-        anim.SetBool("Grounding",Grounding);
+        anim.SetBool("Grounding",true);
     }
 
     void LateUpdate()
     {
         anim.SetFloat("moveX", Mathf.Abs(Axis.x));
-        anim.SetBool("Grounding", Grounding);
+        anim.SetBool("Grounding", true);
     }
 
     Vector2 Axis
