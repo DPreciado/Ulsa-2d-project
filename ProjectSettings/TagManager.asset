@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coin
+  - grass
+  - Platform
+  - Indicator
   layers:
   - Default
   - TransparentFX
@@ -13,7 +16,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - Coins
   - 
   - 
   - 
@@ -41,4 +44,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 2335749471
+    locked: 0
+  - name: Coins
+    uniqueID: 1408665937
+    locked: 0
+  - name: Stuffs
+    uniqueID: 1983699287
+    locked: 0
+  - name: Player
+    uniqueID: 99626653
+    locked: 0
+  - name: Indicator
+    uniqueID: 1046685517
+    locked: 0
+  - name: Grass
+    uniqueID: 1182571183
+    locked: 0
+  - name: Enemy
+    uniqueID: 1536437905
     locked: 0
