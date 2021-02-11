@@ -45,7 +45,7 @@ public class Enemy : MonoBehaviour
         }else{
             if(timerDelay == 0)
             {
-            anim.SetTrigger("idle");
+                anim.SetTrigger("idle");
             }
             timerDelay += Time.deltaTime;
             if(timerDelay >= delay)
